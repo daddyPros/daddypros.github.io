@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121778063-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121778063-1');
+    </script>
+
+    <title>Designer UX - denisRH</title>
+    <meta name="description" content="Denis RH, concévoir et réaliser des interfaces centrée sur l'utilisateur">
+    <meta name="keywords" content="website, digitale, agence, digitale agency, UX, madagascar, programmation, informatique, lean, UI, design thinking, visual design, innovation, création, startup, mobile apps, iOS apps, website design, app design, responsive websites, agence web">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        #loader{
+            display: flex;
+            position: fixed;
+            text-align: center;
+            background-image: url('');
+            background-size: cover;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            top: 0;
+            z-index: 999; 
+            width: 100%; 
+            height: 100%; 
+            font-size: 30px;
+            overflow: visible; 
+            background: linear-gradient(90deg, rgba(95,161,56,1) 0%, rgba(23,150,62,1) 35%, rgba(95,161,56,1) 100%);
+            color: white;
+            transition: all 1.2s ease;
+        
+        }
+
+        .loadignAnimate {
+            display: block;
+            margin: auto; 
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid black;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 0.6s linear infinite; /* Safari */
+            animation: spin 0.6s linear infinite;
+            }
+
+            /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
+<body>
+
+<main role="main" id="mainContent" style="opacity: 0;">
+    <nav id="nav-principal">
+            <div class="wrapper">
+                <div class="menu-nav">
+                    <a href="#header" class="nav-logo"> <img src="assets/img/logo_progwise_white.svg" alt="logo progwise" width="32px" height="32px"></a>
+                    <ul class="nav-desktop">
+                        
+                        <li><a href="#header" id="btn_apropos">A propos</a></li>
+                        <li><a href="#noscrea" id="btn_crea">Mes crea.</a></li>
+                    </ul>
+
+                    <div class="nav-contact separar">
+                        <a href="#linkContact" class="navigy contact" id="btn_contact">Contact</a>
+                        <div class="nav-toggle maskkk">
+                            <div class="nav-toggle-bar"></div>
+                        </div>
+                    </div>
+
+                    <ul class="nav-mobile" id="mobilNav">
+                        
+                        <li><a href="#header" id="btn_apropos" class="bapropos">A propos</a></li>
+                        <li><a href="#noscrea" id="btn_crea" class="bcrea">Mes crea.</a></li>
+                        <li><a href="#linkContact" id="btn_contactmo" class="bcontactmo">Contact</a></li>
+                        <li><p class="footerNav tsipikkkk">Agence progwise</p></li>
+                    </ul>
+                    
+                </div>
+            </div>
+    </nav>
+    <section id="header">
+        <div class="wrapper">
+            <div class="branding">
+                <nav class="brand">
+                    <ul class="main-nav">
+                        <li class="logo"><a href="#"> <img src="assets/img/logo_progwise.svg" alt="logo progwise"></a></li>
+                        <li class="btn-contact"> <span class="separation"></span> <a href="#linkContact" class="contact">Contact</a></li>
+                    </ul>
+                </nav>                       
+                <h1 class="slogantxt">Designer <span>UX </span></h1>
+
+	            <p><span>Designer graphique </span> depuis 2010. Chacune de mes réalisations est unique et personnalisée. Je travaille chaque graphisme et design selon vos besoins, mais aussi pour qu’il ressemble et reflète votre projet, votre univers.</p>
+                <!--<img class="img-slogan" src="assets/img/phone.png" alt="image phone progwise"> -->       
+            </div>         
+            <!--<a class= "btn-scrool" href="#nosvaleurs" data-target="nosvaleurs"> <span>Scrool page</span></a>--> 
+        </div>      
+    </section>
+
+    <section id="nosvaleurs">
+        <div class="wrapper">
+            <div class="content-valeurs">
+                <img src="assets/img/sariko.png" width="100" height="100"alt="sariko">
+                <div>
+	                <h1 class="titre-valeurs tsipik">Mes valeurs</h1>     
+	                <div class="valeurs">
+	                    <div id="typed-valeurs">
+	                        <h2>Disponibilité: 100% réactif</h2>
+	                        <h2>Qualité: niveau de qualité optimal appliqué </h2>
+	                        <h2>Innovation: une veille constante des nouvelles technologies</h2>
+	                        
+	                    </div>
+	                    <h2 id="typedValue"></h2>	
+	                    
+                 	</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    
+
+    <!--
+    <section id="methodo">
+        <div class="wrapper">
+                <div class="content-methodo">
+                    <div id="container-list"class="content-list">
+                        <h1 class="titremethodo"> <span> methodo </span></h1>
+                        <ul class="list-methodo">
+                            <li><button id="defaultShow"class="linkMethodo" onclick="showContent(event,'designThinking')">Design thinking</button></li>
+                            <li><button class="linkMethodo" onclick="showContent(event,'visualDesign')">Visual design</button></li>
+                            <li><button class="linkMethodo" onclick="showContent(event,'uxDesign')">Ux design</button></li>
+
+                        </ul>
+                    </div>
+                    
+                    
+                    <div id="designThinking" class="content-description" >
+                        <h2>Design thinking</h2>
+                        <div class="content">
+                            <h4 class="first">Pour mener à bien des projets innovants</h4>
+                            <p>Je développe une approche itérative et centrée sur l'utilisateur, j'adapte cette approche en utilisant le "Design Thinking". 
+                                Selon son processus séquencé, je saurai:</p>
+                            <ul>
+                                <li><span class="tsipikk"></span>comprendre l'expérience et la situation des personnes qui vont utiliser votre produit, engager la discussion avec vos utilisateurs en les questionnant, analyser les réactions et besoins des utilisateurs pendant une action ou accomplissement d'une tâche.</li>
+                                <li><span class="tsipikk"></span>définir le processus et l'approche design qui permettront de concevoir l'expérience en fonction du point de vue de l'utilisateur</li>
+                                <li><span class="tsipikk"></span>explorer une large variété d'idées pour éviter d'aller vers des solutions évidentes ou déjà existantes.</li>
+                                <li><span class="tsipikk"></span>créer un prototype qui nous permet de projeter plus facilement dans l'utilisation</li>
+                                <li><span class="tsipikk"></span>demander à l'utilisateur de tester vos prototypes pour améliorer le produit.</li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div id="visualDesign" class="content-description" >
+                        <h2>Visual <br> design</h2>
+                        <div class="content">
+                            <h4 class="first">Pour ameliorer l'expérience de l'utilisateur </h4>
+                            <p>Grâce à Visual design, Je vise à façonner et à ameliorer l'expérience de l'utilisateur en tenant compte les effets des illustrations, de la photographie, de la typographie, de la couleur sur l'utilisabilité des produits. Etant donné que les petits détails discrets de l'esthétique d'un produit peuvent ainsi jouer un rôle important dans la conception de l'expérience utilisateur. </p>
+                          </div>
+                    </div>
+                    <div id="uxDesign" class="content-description" >
+                        <h2>Ux  <br> design</h2>
+                        <div class="content">
+                            <h4 class="first">Pour répondre à des problèmes complexes</h4>
+                            <p>Je peux concevoir pour vous des solutions innovantes pour répondre à des problèmes complexes, à l'aide du mode UX. Je donne du sens à la conception d'un projet et procure une expérience positive aux utilisateurs qui l'utilisent l'application. </p>
+                            <ul>
+                                <li><span class="tsipikk"></span><strong> <u> Recherche:</u> </strong>observer et détecter les contournements d'usages, entretenir avec des utilisateurs (actuels ou futurs), se plonger dans la situation de l'utilisateur ou la suivre de près sans se faire remarquer </li>
+                                <li><span class="tsipikk"></span><strong><u> Ideation:</u> </strong>identifier grâce aux interviews utilisateurs les motivations en fonction des situations et des besoins ressentis, générer des idées à partir des émotions positives que l'on souhaite sisciter chez l'utilisateur , détecter les opportunités de service qui répondent aux besoins de l'utilisateur</li>
+                                <li><span class="tsipikk"></span><strong><u> Conception:</u> </strong>créer les parcours d'utilisation, dessiner rapidement des prototypes de la solution, matérialiser le prototype papier, animer les maquettes de l'interface</li>
+                                <li><span class="tsipikk"></span><strong><u> Test:</u> </strong>tester en salle, à distance, détecter les zones où se porte le regard de l'utilisateur</li>
+                            </ul>
+            
+                        </div>
+                    </div>
+                    
+                    
+                    <button id="myCloseBtn" class="close-btn" onclick="closeContent()"></button>
+                </div>
+            
+        </div>
+        
+    </section>-->
+
+
+	<section id="dev-design">
+        <div class="wrapper">
+                
+        </div>
+        </div>
+    </section>
+
+    <section id="noscrea">
+        <div class="wrapper">
+            <h1 class="titre-noscrea"><span>Nos crea.</span></h1>
+            
+            <figure class="ombre">
+                <img src="assets/img/crea1.png" alt="non du societe">
+                <div class="information">
+                    
+                    <div class="content-desc contenleft" onclick="#">  
+                        <h5>Miezaka</h5>
+                        <figcaption>
+                            <ul>
+                                <li>UX,UI</li> <br>
+                                <li>Conception</li>
+                            </ul>
+                        </figcaption>
+                    </div> 
+                    
+                </div>
+            </figure>
+            <figure class="ombre">
+                <img src="assets/img/crea2.png" alt="orange">
+                <div class="information" >
+                    
+                    <div class="content-desc contenleft" onclick="#">
+                        <h5>My Propertyz</h5>
+                        <figcaption>
+                            <ul>
+                                <li>UX</li> <br>
+                                <li>Conception mobile</li>
+                            </ul>
+                        </figcaption>
+                    </div> 
+                    
+                </div>
+            </figure>
+            <figure class="ombre">
+                <img src="assets/img/crea3.png" alt="non du societe">
+                <div class="information" >
+                    
+                    <div class="content-desc contenleft" onclick="#">  
+                        <h5>Hightao</h5>
+                        <figcaption>
+                            <ul>
+                                <li>UI/UX</li> <br>
+                                <li>Création logo</li>
+                            </ul>
+                        </figcaption>
+                    </div> 
+                    
+                </div>
+            </figure>
+            
+            <!-- <button class="allcrea arrows">Voir tous  <br> nos creations</button> -->
+
+
+        </div>
+    </section>
+
+    <div id="linkContact"></div>
+    <section id="contact">
+        <div class="wrapper">
+                <h1 class="nous-contactez"> <span>Me contacter</span></h1>
+                <div class="first">
+                    <p>MON NUMERO PHONE</p>
+                    <a class="linki" href="tel:+261348344866">+(261) 34 83 448 66</a>
+                </div>
+                <div>
+                    <p>MON ADRESSE MAIL</p>
+                    <a class="linki" href="mailto:prog.wise3@gmail.com">denis@hightao-mg.com</a>
+                </div>
+                <div>
+                    <p>MON PSEUDO SKYPE</p>
+                    <a class="linki" href="skype:denis harivelo?call">denis harivelo</a>
+                </div>
+
+                <footer>designed / developed by denisRH - copyright 2021</footer>
+        </div>
+    </section>
+
+    <section id="contact-mobile">
+        <div class="wrapper">
+                <h1>Me contacter <br>sur</h1>
+                <a class="mail" href="mailto:denis@hightao-mg.com">gmail</a>
+                <a class="skype" href="skype:denis harivelo?call">skype</a>
+                <a class="phone" href="tel:+261348344866">phone</a>
+                <footer>designed / developed by denisRH - copyright 2021 </footer>
+        </div>
+    </section>
+
+    <div id="particles-js"></div>
+</main>
+<div id="loader">
+   <div class="loadignAnimate"></div>
+</div>
+
+
+  <script src="./assets/js/particles.js"></script>
+  <script src="./assets/js/config-particles.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/typed.js"></script>
+  <script src="./assets/js/scrool.js"></script>
+  <script src="./assets/js/config-typed.js"></script>
+  <script src="./assets/js/myscript.js"></script>
+  <script src="./assets/js/navJquery.js"></script>
+
+
+</body>
+</html>
+ 

@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /assets/
+Disallow: /assets
+Disallow: https://progwise-mg.com.cutestat.com
+
+
+Sitemap: https://www.progwise-mg.com/sitemap.xml

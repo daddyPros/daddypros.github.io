@@ -1,0 +1,1 @@
+function removeLoader(){var e=document.getElementById("loader");e.style.display="none",document.body.removeChild(e)}window.sr=ScrollReveal(),window.addEventListener("load",function(){var e=document.getElementById("loader"),t=document.getElementById("mainContent");e.style.top="-100%",e.style.opacity="0",setTimeout(removeLoader,3e3),t.style.opacity="1"});
