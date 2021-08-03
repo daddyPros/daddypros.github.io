@@ -381,7 +381,7 @@ hr {
     position: absolute;
     top: 0;
     left: -100%;
-    background: linear-gradient(108deg, #f06841 0%, #ee4556 47%, #eb206d 100%);
+    background: linear-gradient(108deg, #5fa138 0%, #17963e 47%, #5fa138 100%);
     display: none; }
     @media screen and (max-width: 770px) {
       .menu-nav .nav-mobile {
